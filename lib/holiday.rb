@@ -55,9 +55,22 @@ end
 
 
 def all_winter_holiday_supplies(holiday_hash)
-  # return an array of all of the supplies that are used in the winter season
+  holiday_hash
 
 end
+
+
+
+  # Question 5
+  # Write a method to collect all Winter supplies from all the winter holidays
+  describe "#all_winter_holiday_supplies" do
+    it "has all the winter supplies" do
+      ["Lights", "Wreath", "Party Hats"].each do |supply|
+        expect(all_winter_holiday_supplies(holiday_supplies)).to include(supply)
+      end
+    end
+  end
+
 
 def all_supplies_in_holidays(holiday_hash)
   # iterate through holiday_hash and print items such that your readout resembles:
