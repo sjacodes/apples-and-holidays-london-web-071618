@@ -71,9 +71,6 @@ def all_supplies_in_holidays(holiday_hash)
   end
 end
 
-  # Question 6
-  # Write a method that uses a loop to list out all the supplies you have for each holiday and the season
-  describe "#all_supplies_in_holidays" do
 
 def all_holidays_with_bbq(holiday_hash)
   # return an array of holiday names (as symbols) where supply lists
