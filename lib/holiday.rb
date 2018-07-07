@@ -55,21 +55,10 @@ end
 
 
 def all_winter_holiday_supplies(holiday_hash)
-  winter_supplies = holiday_hash[:winter].values
+  winter_supplies = holiday_hash[:winter].values.flatten
   return winter_supplies
 end
 
-
-
-  # Question 5
-  # Write a method to collect all Winter supplies from all the winter holidays
-  describe "#all_winter_holiday_supplies" do
-    it "has all the winter supplies" do
-      ["Lights", "Wreath", "Party Hats"].each do |supply|
-        expect(all_winter_holiday_supplies(holiday_supplies)).to include(supply)
-      end
-    end
-  end
 
 
 def all_supplies_in_holidays(holiday_hash)
