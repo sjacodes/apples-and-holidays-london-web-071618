@@ -25,7 +25,7 @@ end
 
 
 def add_supply_to_winter_holidays(holiday_hash, supply)
-  holiday_hash
+  holiday_hash.each do |
 end
 
  # Question 2
