@@ -55,7 +55,7 @@ end
 
 
 def all_winter_holiday_supplies(holiday_hash)
-  h
+  holiday_hash.
 
 end
 
