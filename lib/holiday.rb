@@ -1,7 +1,8 @@
 require 'pry'
 
 
-def ho
+def holiday_supplies_hash
+  
 holiday_supplies = {
   :winter => {
     :christmas => ["Lights", "Wreath"],
