@@ -47,6 +47,13 @@ def add_new_holiday_with_supplies(holiday_hash, season, holiday_name, supply_arr
 
 end
 
+def add_new_holiday_with_supplies(holiday_hash, season, holiday_name, supply_array)
+  # code here
+  # remember to return the updated hash
+  hash1 = {holiday_name => supply_array}
+  holiday_hash[season] = hash1
+  return holiday_hash
+end
 
 # Question 4
   # Write a method that adds a new holiday and its associated supplies to any season
