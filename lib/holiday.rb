@@ -26,14 +26,13 @@ end
 
 def add_supply_to_winter_holidays(holiday_hash, supply)
   holiday_hash.each do |season, supply|
-    if season === :winter
+    if season == :winter
       supply.each do |holiday_name, list|
           list.push(supply)
       end
     end
   end
-  print holiday_hash
-end
+  return holiday_hash
 end
 
  # Question 2
