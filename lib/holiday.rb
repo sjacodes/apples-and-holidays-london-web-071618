@@ -37,10 +37,21 @@ end
 
 
 def add_supply_to_memorial_day(holiday_hash, supply)
-  # again, holiday_hash is the same as the ones above
-  # add the second argument to the memorial day array
+  
 
 end
+
+ # Question 3
+  # Write a method that adds a supply to Memorial Day
+  describe "#add_supply_to_memorial_day" do
+    let(:memorial_day_supplies) { holiday_supplies[:spring][:memorial_day] }
+
+    it "adds a supply to memorial day" do
+      add_supply_to_memorial_day(holiday_supplies, "Grill")
+      expect(memorial_day_supplies).to include("Grill")
+      expect(memorial_day_supplies).not_to include("Table Cloth")
+    end
+
 
 def add_new_holiday_with_supplies(holiday_hash, season, holiday_name, supply_array)
   # code here
