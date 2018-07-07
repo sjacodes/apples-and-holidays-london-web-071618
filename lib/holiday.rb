@@ -62,10 +62,16 @@ end
 
 
 def all_supplies_in_holidays(holiday_hash)
- holiday_hash.each do |
+ holiday_hash.collect do |season,
 
 end
 
+  holiday_hash.collect do |season, v|
+    puts "#{season.capitalize}:"
+    v.collect do |holiday, items|
+      puts "  #{holiday.to_s.gsub("_", " ").split.map(&:capitalize).join(' ')}: #{items.join(", ")}"
+    end
+  end
 
   # Question 6
   # Write a method that uses a loop to list out all the supplies you have for each holiday and the season
